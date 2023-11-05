@@ -1,3 +1,4 @@
+<div style="width: 100%; display: flex; justify-content: center;">
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -5,23 +6,33 @@
     <title>
       Yi Li at University of Washington
     </title>
+    <style>
+      table {
+        width: 768px;
+        max-width: 1000px;
+        overflow-x: auto;
+        margin: 0 auto; /* Center the table */
+      }
+      /* @media screen and (max-width: 768px) {
+        table {
+          width: 100%;
+          max-width: none;
+          overflow-x: auto; /* Add horizontal scroll for wide tables */
+        }
+      } */
+    </style>
+    <script type="text/javascript">
+      function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if (e.style.display == 'block')
+          e.style.display = 'none';
+        else
+          e.style.display = 'block';
+      }
+    </script>
   </head>
   <body>
-    <script type="text/javascript">
-      <!--
-          function toggle_visibility(id) {
-             var e = document.getElementById(id);
-             if(e.style.display == 'block')
-                e.style.display = 'none';
-             else
-                e.style.display = 'block';
-          }
-      //-->
-    </script>
-    <table 
-    width: 500px
-    max-width: 1000px;
-    overflow: hidden;>
+    <table>
       <tr valign="top">
         <td width="150px"></td>
         <td width="900px">
@@ -30,29 +41,22 @@
 
           <a target='_blank' href='./ref/Yi_s_CV.pdf'>
             <img src='./icons/resume_icon.png' alt='Resume Icon' height='30' style='vertical-align:middle; margin-right: 5px;' />resume  
-        </a>
-        <a target='_blank' href='https://scholar.google.com/citations?user=MW36lZUAAAAJ&hl=en'>
-            <img src='./icons/google_scholar_icon.png' alt='Google Scholar Icon' height='30' style='vertical-align:middle; margin-right: 5px;' />Google Scholar
-        </a>
+          </a>
+          <a target='_blank' href='https://scholar.google.com/citations?user=MW36lZUAAAAJ&hl=en'>
+              <img src='./icons/google_scholar_icon.png' alt='Google Scholar Icon' height='30' style='vertical-align:middle; margin-right: 5px;' />Google Scholar
+          </a>
           
           <h2>Biography</h2>
-          <font face="Arial"; size='3'>
-          	I am currently a PhD student in University of Washington advised by Prof. <a rel='nofollow' 
-          	target='_blank' href='http://homes.cs.washington.edu/~fox/'>Dieter Fox</a>. <br/><br/>
-          	Before that, I received my M.S. degree in Control Science and Technology
-          	from Tsinghua University in 2017 advised by Prof. <a rel='nofollow', target='_blank'
-          	href='http://media.au.tsinghua.edu.cn/xiangyangji.htm'>Xiangyang Ji</a>
-          	and my bachelor degree in Automation from Tsinghua University in 2014.
-              I also worked with Dr. <a rel='nofollow', target='_blank'
-          	href='http://www.jifengdai.org'>Jifeng Dai</a> as a research intern at Microsoft Research Asia for 18 months.<br/><br/>
-          	My research focuses on computer vision and deep learning, with emphasis on 
-          	providing better algorithms for machine to understand the world. My current 
-          	work is to extract more information from RGB images, like accurately estimating object poses using RGB images.<br/><br/>
-            <!-- <a target='_blank' href='./ref/Yi_s_CV.pdf'>resume</a> -->
-          	</font>
+          <font face="Arial" size="3">
+            I am currently a PhD student at the University of Washington advised by Prof. <a rel="nofollow" target="_blank" href="http://homes.cs.washington.edu/~fox/">Dieter Fox</a>. <br /><br />
+            Before that, I received my M.S. degree in Control Science and Technology from Tsinghua University in 2017 advised by Prof. <a rel="nofollow" target="_blank" href="http://media.au.tsinghua.edu.cn/xiangyangji.htm">Xiangyang Ji</a> and my bachelor's degree in Automation from Tsinghua University in 2014.
+            I also worked with Dr. <a rel="nofollow" target="_blank" href="http://www.jifengdai.org">Jifeng Dai</a> as a research intern at Microsoft Research Asia for 18 months.<br /><br />
+            My research focuses on perception and reasoning in robotics.<br /><br />
+            <a target="_blank" href="./ref/Yi_s_CV.pdf">resume</a>
+          </font>
           <h2>News</h2>
           <ul>
-            <li><font face="Arial"; font size='3'>Our paper <a href="https://arxiv.org/abs/1804.00175">STOW</a> has been accepted by CoRL 2023! Code and dataset is coming!</font></li>
+            <li><font face="Arial"; font size='3'>Our paper <a href="./ref/stow.pdf">STOW</a> has been accepted by CoRL 2023! Code and dataset is coming!</font></li>
             <li><font face="Arial"; font size='3'>Our paper <a href="https://arxiv.org/abs/1804.00175">DeepIM</a> has been accepted by ECCV 2018 as oral! Code is released on <a href="https://github.com/liyi14/mx-DeepIM">Github</a> and award one of the 12 best papers in ECCV 2018. An extended version is published on IJCV.</font></li>
             <li><font face="Arial"; font size='3'>Our paper <a href="https://arxiv.org/abs/1703.06211">Deformable ConvNets</a> has been accepted by ICCV 2017. Code is released on <a href="https://github.com/msracver/Deformable-ConvNets">Github</a>. There is also a cool <a href="https://github.com/bharatsingh430/Deformable-ConvNets">third-party improvement</a> showing the best single-model performance on COCO dataset.</font></li>
             <li><font face="Arial"; font size='3'>Awarded Excellent Graduates of Beijing. <br/></font></li>
@@ -61,7 +65,7 @@
             <li><font face="Arial"; font size='3'>Our paper <a href="http://arxiv.org/abs/1605.06409">R-FCN</a> has been accepted by the NIPS 2016 conference, and code is released on <a href="https://github.com/daijifeng001/R-FCN">Github</a>.</font></li>
             <li><font face="Arial"; font size='3'>Our paper <a href="http://arxiv.org/abs/1603.08678">Inst-FCN</a> has been accepted by the ECCV 2016 conference.</font></li>
           </ul>
-          <h2>Publications</h2>
+          <h2>Selected Publications</h2>
           <!-- <a target='_blank' href='https://scholar.google.com/citations?user=MW36lZUAAAAJ&hl=en'>Google Scholar</a><br/> -->
           (<sup>+</sup> indicates equal contribution)</p>
 
@@ -73,7 +77,7 @@
                 <td width="1px"></td>
                 <td style='width:771px;height:89px'>
                   <font face="Arial" size='4'><b>
-                  DeepIM: Deep Iterative Matching for 6D Pose Estimation<br/>
+                  STOW: Discrete-Frame Segmentation and Tracking of Unseen Objects for Warehouse Picking Robots<br/>
                   </b></font>
                   <font size="3" face="Arial">
                     <b>Yi Li</b>, Muru Zhang, Markus Grotz, Kaichun Mo, Dieter Fox<br/> 
@@ -194,90 +198,91 @@
               </tr>
             </tbody>
           </table>
-          <table style='border-width:1px;border-color:rgb(255,255,255);border-collapse:collapse' cellspacing='0' bordercolor='#888' border='1'>
+          <table cellspacing="0" style="border-collapse: collapse">
             <tbody>
               <tr>
-                <td style='width:101px;height:89px'> <a imageanchor='1' href='./figures/rfcn_logo.png'><img width='100' src='./figures/rfcn_logo.png' height='77' border='0'/></a></td>
-                <td width="1px"></td>
-                <td style='width:1000px;height:89px'>
-                <font size="4" face="Arial"><b>
-                  R-fcn: Object detection via region-based fully convolutional networks<br/>
-                </b><font>
-                <font size="3" face="Arial">
-                  Jifeng Dai, <b>Yi Li</b>, Kaiming He, Jian Sun<br/>
-                  In Advances in Neural Information Processing Systems(<b>NIPS</b>), 2016<br/> 
-                  <a target='_blank' href='https://arxiv.org/pdf/1605.06409.pdf'>PDF</a>, 
-                  <a href="javascript:toggle_visibility('dai_nips16')">Bibtex</a>, 
-                  <a target='_blank' href='https://github.com/daijifeng001/R-FCN'>Code</a>, 
-                  <a target='_blank' href='./ref/rfcn_poster.pdf'>Poster</a>
-                 </font>
-                  <pre id="dai_nips16" xml:space="preserve" style="display: none; font-size: 12px">
+                <td style="width: 101px; height: 89px">
+                  <a imageanchor="1" href="./figures/rfcn_logo.png"><img width="100" src="./figures/rfcn_logo.png" height="77" border="0" /></a>
+                </td>
+                <td style="width: 900px; height: 89px">
+                  <font size="4" face="Arial"><b>
+                      R-fcn: Object detection via region-based fully convolutional networks<br />
+                    </b><font>
+                    <font size="3" face="Arial">
+                      Jifeng Dai, <b>Yi Li</b>, Kaiming He, Jian Sun<br />
+                      In Advances in Neural Information Processing Systems (<b>NIPS</b>), 2016<br />
+                      <a target="_blank" href="https://arxiv.org/pdf/1605.06409.pdf">PDF</a>,
+                      <a href="javascript:toggle_visibility('dai_nips16')">Bibtex</a>,
+                      <a target="_blank" href="https://github.com/daijifeng001/R-FCN">Code</a>,
+                      <a target="_blank" href="./ref/rfcn_poster.pdf">Poster</a>
+                    </font>
+                    <pre id="dai_nips16" xml:space="preserve" style="display: none; font-size: 12px">
 @inproceedings{dai2016r,
   title={R-fcn: Object detection via region-based fully convolutional networks},
   author={Dai, Jifeng and Li, Yi and He, Kaiming and Sun, Jian},
   booktitle={Advances in Neural Information Processing Systems},
   pages={379--387},
-  year={2016}
+
+year={2016}
 }
 </pre>
-                </td>
-              </tr>
-              <tr>
-                <td style='width:101px;height:89px'> <a imageanchor='1' href='./figures/inst_fcn_logo_2.png'><img width='100' src='./figures/inst_fcn_logo_2.png' height='77' border='0'/></a></td>
-                <td width="1px"></td>
-                <td style='width:1000px;height:89px'>
-                <font size="4" face="Arial"><b>
-                  Instance-sensitive fully convolutional networks<br/>
-                </b></font>
-                <font size="3" face="Arial">
-                  Jifeng Dai, Kaiming He, <b>Yi Li</b>, Shaoqing Ren, Jian Sun<br/>
-                  In European Conference on Computer Vision (<b>ECCV</b>), 2016<br/>
-                  <a target='_blank' href='https://arxiv.org/pdf/1603.08678.pdf'>PDF</a>, 
-                  <a href="javascript:toggle_visibility('dai_eccv16')">Bibtex</a>,  
-                  <a target='_blank' href='./ref/instfcn_poster.pdf'>Poster</a>
-                  <pre id="dai_eccv16" xml:space="preserve" style="display: none; font-size: 12px">
-                </font>
+</td>
+</tr>
+<tr>
+<td style="width: 101px; height: 89px">
+<a imageanchor="1" href="./figures/inst_fcn_logo_2.png"><img width="100" src="./figures/inst_fcn_logo_2.png" height="77" border="0" /></a>
+</td>
+<td style="width: 900px; height: 89px">
+<font size="4" face="Arial"><b>
+Instance-sensitive fully convolutional networks<br />
+</b></font>
+<font size="3" face="Arial">
+Jifeng Dai, Kaiming He, <b>Yi Li</b>, Shaoqing Ren, Jian Sun<br />
+In European Conference on Computer Vision (<b>ECCV</b>), 2016<br />
+<a target="_blank" href="https://arxiv.org/pdf/1603.08678.pdf">PDF</a>,
+<a href="javascript:toggle_visibility('dai_eccv16')">Bibtex</a>,
+<a target="_blank" href="./ref/instfcn_poster.pdf">Poster</a>
+<pre id="dai_eccv16" xml:space="preserve" style="display: none; font-size: 12px">
+</font>
 @inproceedings{dai2016instance,
-  title={Instance-sensitive fully convolutional networks},
-  author={Dai, Jifeng and He, Kaiming and Li, Yi and Ren, Shaoqing and Sun, Jian},
-  booktitle={European Conference on Computer Vision},
-  pages={534--549},
-  year={2016},
-  organization={Springer International Publishing}
+title={Instance-sensitive fully convolutional networks},
+author={Dai, Jifeng and He, Kaiming and Li, Yi and Ren, Shaoqing and Sun, Jian},
+booktitle={European Conference on Computer Vision},
+pages={534--549},
+year={2016},
+organization={Springer International Publishing}
 }
 </pre>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <h2>
-            <a name='TOC-Links'/>
-              Honor and Awards
-          </h2>
-          <ul>
-          <font size='3'>
-          <li>Reviewer of AAAI, CVPR, ICCV and ECCV since 2018</li>
-          <li>Outstanding 2017 Master Thesis by Chinese Institute of Electronics (10 in China)</li>
-          <li>Outstanding 2017 Graduate Student in Beijing</li>
-          <li>Outstanding 2016 Intern in MSRA</li>
-          <li>2013 National Scholarship</li>
-          <li>2012 Tsinghua Alumni Zheng Geru Scholarship</li>
-          </font>
-          </ul>
-        </td>
-        <td width="150px"></td>
-      </tr>
-    </table>
-  </body>
-            
+</td>
+</tr>
+</tbody>
+</table>
+<h2>
+<a name="TOC-Links"></a>
+Honor and Awards
+</h2>
+<ul>
+<font size="3">
+<li>Reviewer of AAAI, CVPR, ICCV, and ECCV since 2018</li>
+<li>Outstanding 2017 Master's Thesis by the Chinese Institute of Electronics (ranked 10th in China)</li>
+<li>Outstanding 2017 Graduate Student in Beijing</li>
+<li>Outstanding 2016 Intern in MSRA</li>
+<li>2013 National Scholarship</li>
+<li>2012 Tsinghua Alumni Zheng Geru Scholarship</li>
+</font>
+</ul>
+</td>
+<td width="150px"></td>
+</tr>
+</table>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167277733-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-167277733-1');
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+    gtag('config', 'UA-167277733-1');
 </script>
-
+  </body>
 </html>
+</div>
