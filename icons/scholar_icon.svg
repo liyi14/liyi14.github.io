@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Google Scholar">
-  <rect width="48" height="48" rx="5" fill="#4285f4"/>
-  <path fill="#fff" d="M24 10 6 19l18 9 18-9-18-9zm-12 14.2v6.2c0 4.4 5.4 7.6 12 7.6s12-3.2 12-7.6v-6.2l-12 6-12-6zm28-1.7v10.8h-3V24l3-1.5z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Google Scholar">
+  <path d="M12 4 3 8.5l9 4.5 9-4.5z" fill="#4b5563"/>
+  <path d="M7 11v4.3c0 2 2.2 3.7 5 3.7s5-1.7 5-3.7V11l-5 2.5z" fill="#4b5563"/>
+  <path d="M20 9.5v6" stroke="#4b5563" stroke-width="1.6" stroke-linecap="round"/>
 </svg>

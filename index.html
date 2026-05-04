@@ -17,6 +17,29 @@
         overflow-x: auto;
         margin: 0 auto; /* Center the table */
       }
+      .link-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        align-items: center;
+        margin: 8px 0 18px;
+        font-size: 15px;
+      }
+      .link-row a {
+        display: inline-flex;
+        gap: 6px;
+        align-items: center;
+        color: #0645ad;
+        text-decoration: none;
+      }
+      .link-row a:hover {
+        text-decoration: underline;
+      }
+      .link-row img {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
       /* @media screen and (max-width: 768px) {
         table {
           width: 100%;
@@ -42,15 +65,17 @@
         <td width="900px">
           <img src='./figures/logo5.png' alt='Yi Li' height='250' border='0'/>
 
-          <a target='_blank' href='./ref/Yi_Li_CV.pdf'>
-            <img src='./icons/resume_icon.svg' alt='Resume Icon' height='30' style='vertical-align:middle; margin-right: 5px;' />Resume
-          </a>
-          <a target='_blank' href='https://scholar.google.com/citations?user=MW36lZUAAAAJ&amp;hl=en'>
-              <img src='./icons/scholar_icon.svg' alt='Google Scholar Icon' height='30' style='vertical-align:middle; margin-right: 5px;' />Google Scholar
-          </a>
-          <a target='_blank' href='https://www.linkedin.com/in/yi-li-9846989a/'>
-            <img src='./icons/linkedin_icon.svg' alt='LinkedIn Icon' height='30' style='vertical-align:middle; margin-right: 5px;' />LinkedIn
-          </a>
+          <div class="link-row">
+            <a target='_blank' href='./ref/Yi_Li_CV.pdf'>
+              <img src='./icons/resume_icon.svg' alt='Resume Icon' />Resume
+            </a>
+            <a target='_blank' href='https://scholar.google.com/citations?user=MW36lZUAAAAJ&amp;hl=en'>
+              <img src='./icons/scholar_icon.svg' alt='Google Scholar Icon' />Google Scholar
+            </a>
+            <a target='_blank' href='https://www.linkedin.com/in/yi-li-9846989a/'>
+              <img src='./icons/linkedin_icon.svg' alt='LinkedIn Icon' />LinkedIn
+            </a>
+          </div>
           
           <h2>Biography</h2>
 <div style="font-family: Arial; font-size: 16px;">
