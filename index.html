@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style type="text/css">
       body {
+        color: #222;
         font-family: Arial, sans-serif;
-        line-height: 1.45;
+        line-height: 1.5;
       }
       table {
         width: min(100%, 768px);
@@ -17,13 +18,31 @@
         overflow-x: auto;
         margin: 0 auto; /* Center the table */
       }
+      h2 {
+        font-size: 21px;
+        margin: 20px 0 8px;
+      }
+      ul {
+        margin-top: 6px;
+        padding-left: 22px;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+      .header-image {
+        display: block;
+        height: auto;
+        margin: 0 0 5px;
+        max-width: 720px;
+        width: 100%;
+      }
       .link-row {
         display: flex;
         flex-wrap: wrap;
-        gap: 18px;
+        gap: 15px;
         align-items: center;
-        margin: 8px 0 18px;
-        font-size: 15px;
+        margin: 2px 0 20px;
+        font-size: 14px;
       }
       .link-row a {
         display: inline-flex;
@@ -36,9 +55,17 @@
         text-decoration: underline;
       }
       .link-row img {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
         vertical-align: middle;
+      }
+      .bio {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.55;
+      }
+      .bio p {
+        margin: 0 0 12px;
       }
       /* @media screen and (max-width: 768px) {
         table {
@@ -63,7 +90,7 @@
       <tr valign="top">
         <td width="150px"></td>
         <td width="900px">
-          <img src='./figures/logo5.png' alt='Yi Li' height='250' border='0'/>
+          <img class='header-image' src='./figures/logo5.png' alt='Yi Li' border='0'/>
 
           <div class="link-row">
             <a target='_blank' href='./ref/Yi_Li_CV.pdf'>
@@ -78,7 +105,7 @@
           </div>
           
           <h2>Biography</h2>
-<div style="font-family: Arial; font-size: 16px;">
+<div class="bio">
   <p>
     I am a Member of Technical Staff at xAI on the pretraining team. My work focuses on trillion-token-scale pretraining data for frontier LLMs, including web-scale processing, quality filtering, corpus coverage, interleaved web data, token efficiency, and training stability.
   </p>
